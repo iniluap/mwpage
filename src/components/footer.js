@@ -10,11 +10,13 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <FooterStyles>
-      <p>
-        Treść tej wizytówki nie stanowi reklamy, w szczególności reklamy
-        osobistej, ani oferty w rozumieniu obowiązujących przepisów prawa.
-      </p>
-      <p>&copy; Paulina Sędłak-Jakubowska {new Date().getFullYear()}</p>
+      <div>
+        <p>
+          Treść tej wizytówki nie stanowi reklamy, w szczególności reklamy
+          osobistej, ani oferty w rozumieniu obowiązujących przepisów prawa.
+        </p>
+        <p>&copy; Paulina Sędłak-Jakubowska {new Date().getFullYear()}</p>
+      </div>
     </FooterStyles>
   );
 }

@@ -4,7 +4,7 @@ const Typography = createGlobalStyle`
   body {
     color: var(--black);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     letter-spacing: 0.1rem;
   }
@@ -41,10 +41,6 @@ const Typography = createGlobalStyle`
 
   .center {
     text-align: center;
-  }
-
-  p {
-    font-size: 1.4rem;
   }
 
   ul {

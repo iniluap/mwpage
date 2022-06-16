@@ -40,17 +40,6 @@ const HeaderImageWrapperStyles = styled.figure`
     margin: 0;
     max-width: 350px;
   }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border: 5px solid var(--primary-green);
-  }
 `;
 
 export default function Header() {

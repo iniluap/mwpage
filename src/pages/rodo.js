@@ -19,8 +19,12 @@ export default function RodoPage() {
           Administratorem Państwa danych osobowych jest notariusz Marek
           Wasilewski prowadzący kancelarię notarialną w Warszawie (kod pocztowy:
           02-679), przy ulicy Zygmunta Modzelewskiego numer 63 lok. U5; numer
-          telefonu: 601 484 824; adres poczty elektronicznej:
-          wasilewski@notariusze.waw.pl.
+          telefonu: <a href="tel:+48601484824">601 484 824</a>; adres poczty
+          elektronicznej:{' '}
+          <a href="mailto:wasilewski@notariusze.waw.pl">
+            wasilewski@notariusze.waw.pl
+          </a>
+          .
         </li>
         <li>
           Państwa dane osobowe przetwarzał będę wyłącznie w celach związanych z
@@ -128,7 +132,11 @@ export default function RodoPage() {
         <li>
           Jeżeli będą Państwo mieli pytania lub wątpliwości związane z
           przetwarzaniem Państwa danych osobowych, mogą Państwo przesłać je na
-          adres poczty elektronicznej: wasilewski@notariusze.waw.pl.
+          adres poczty elektronicznej:{' '}
+          <a href="mailto:wasilewski@notariusze.waw.pl">
+            wasilewski@notariusze.waw.pl
+          </a>
+          .
         </li>
       </ol>
     </>

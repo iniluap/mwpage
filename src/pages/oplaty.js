@@ -8,9 +8,13 @@ export default function OplatyPage() {
       <p>
         Notariusz udziela bezpłatnych informacji w ramach dokonywanych
         czynności. Uzyskanie informacji możliwe jest podczas wizyty w
-        kancelarii, a także telefonicznie (nr tel.: 601 484 824) lub za
-        pośrednictwem poczty elektronicznej (adres e-mail:
-        wasilewski@notariusze.waw.pl).
+        kancelarii, a także telefonicznie (nr tel.:{' '}
+        <a href="tel:+48601484824">601 484 824</a>) lub za pośrednictwem poczty
+        elektronicznej (adres e-mail:
+        <a href="mailto:wasilewski@notariusze.waw.pl">
+          wasilewski@notariusze.waw.pl
+        </a>
+        ).
       </p>
       <p>
         Notariusz w określonych przepisami przypadkach pobiera opłaty. W

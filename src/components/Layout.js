@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
+import ContactBar from './ContactBar';
 import styled from 'styled-components';
 import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
@@ -46,6 +47,7 @@ export default function Layout({ children }) {
       </a>
       <MobileNav />
       <MainStyles>
+        <ContactBar />
         <Header />
         <Nav className="nav" />
         <ArticleStyles id="main-content">{children}</ArticleStyles>
