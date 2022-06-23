@@ -6,6 +6,10 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const AddressStyles = styled.address`
   svg {
     margin-right: 0.5rem;
+
+    .contact-page-address & {
+      color: var(--secondary-blue);
+    }
   }
 `;
 

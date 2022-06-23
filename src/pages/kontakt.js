@@ -17,21 +17,41 @@ const ContactStyles = styled.div`
   }
 `;
 
+const OpeningsHeadlineStyles = styled.h4`
+  text-decoration: underline;
+  text-decoration-color: var(--primary-yellow);
+  font-weight: bolder;
+`;
+
 export default function KontaktPage() {
   return (
     <ContactStyles>
       <SectionHeader sectionTitle="Kontakt" />
-      <p>Kancelaria Notarialna Marek Wasilewski</p>
+      <h3>Kancelaria Notarialna Marek Wasilewski</h3>
       <div className="card-wrapper">
-        <Address />
-        <div>
-          <p>Godziny otwarcia:</p>
-          <p>poniedziałek i wtorek 12:00 – 20:00</p>
-          <p>środa i czwartek 9:00 – 17:00</p>
-          <p>piątek 8:00 – 14:00</p>
+        <div className="contact-page-address">
+          <OpeningsHeadlineStyles className="m-ver-2">
+            Dane kontaktowe
+          </OpeningsHeadlineStyles>
+          <Address />
         </div>
         <div>
-          <p>NIP: 6692481911 REGON: 521139370</p>
+          <OpeningsHeadlineStyles className="m-ver-2">
+            Godziny otwarcia
+          </OpeningsHeadlineStyles>
+          <p className="m-ver-2">
+            poniedziałek i wtorek: <strong>12:00 – 20:00</strong>
+          </p>
+          <p className="m-ver-2">
+            środa i czwartek: <strong>9:00 – 17:00</strong>
+          </p>
+          <p className="m-ver-2">
+            piątek: <strong>8:00 – 14:00</strong>
+          </p>
+        </div>
+        <div>
+          <p>NIP: 6692481911</p>
+          <p>REGON: 521139370</p>
           <p>
             Nr bieżącego rachunku bankowego: 36 1050 1025 1000 0092 9333 4992
           </p>
