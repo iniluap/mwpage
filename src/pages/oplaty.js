@@ -10,7 +10,7 @@ export default function OplatyPage() {
         czynności. Uzyskanie informacji możliwe jest podczas wizyty w
         kancelarii, a także telefonicznie (nr tel.:{' '}
         <a href="tel:+48601484824">601 484 824</a>) lub za pośrednictwem poczty
-        elektronicznej (adres e-mail:
+        elektronicznej (adres e-mail:{' '}
         <a href="mailto:wasilewski@notariusze.waw.pl">
           wasilewski@notariusze.waw.pl
         </a>
