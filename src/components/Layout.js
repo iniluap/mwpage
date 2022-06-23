@@ -51,8 +51,8 @@ export default function Layout({ children }) {
       <MobileNav />
       <MainStyles>
         <ContactBar />
-        <Header />
         <Nav className="nav" />
+        <Header />
         <ArticleStyles id="main-content">{children}</ArticleStyles>
         <Footer />
       </MainStyles>

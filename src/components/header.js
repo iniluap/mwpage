@@ -7,7 +7,7 @@ const HeaderStyles = styled.header`
 
   @media screen and (min-width: 768px) {
     background: none;
-    height: 400px;
+    height: var(--header-height);
     display: flex;
     align-items: center;
   }
@@ -17,7 +17,7 @@ const HeaderStyles = styled.header`
     z-index: 1;
 
     @media screen and (min-width: 768px) {
-      margin: 0 auto;
+      margin: 20rem auto 0;
       padding: 0 var(--main-container-padding);
       height: min-content;
       max-width: 1000px;
@@ -42,7 +42,7 @@ const HeaderImageWrapperStyles = styled.figure`
 
   @media screen and (min-width: 768px) {
     display: block;
-    height: 400px;
+    height: var(--header-height);
     margin: 0;
     position: absolute;
     top: 0;

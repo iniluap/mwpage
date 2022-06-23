@@ -7,8 +7,14 @@ const NavStyles = styled.nav`
 
   @media screen and (min-width: 768px) {
     display: block;
-    max-width: var(--main-container-width);
     margin: 0 auto;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100vw;
+    background-color: var(--white);
+    box-shadow: var(--layered-shadow);
+    z-index: 5;
   }
 
   ul {
@@ -23,7 +29,7 @@ const NavStyles = styled.nav`
 export default function Nav() {
   return (
     <NavStyles>
-      <ul className="ul-plain">
+      <ul className="ul-plain m-ver-2">
         <li>
           <Link to="/" className="nav-link" aria-label="Do strony głównej">
             Strona główna

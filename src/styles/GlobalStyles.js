@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary-rose: #c4625a;
     --whitespace-primary: 2rem;
     --whitespace-secondary: 3rem;
+    --header-height: 500px;
     --main-container-width: 1000px;
     --main-container-padding: 2vw;
     --layered-shadow: 0 1px 1px rgb(46 41 51 / 8%),

@@ -54,8 +54,6 @@ const Typography = createGlobalStyle`
   }
 
   .ul-plain {
-    margin: 0;
-    margin-top: 1.5rem;
     padding: 0;
     list-style: none;
   }
