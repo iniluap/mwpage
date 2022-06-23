@@ -16,14 +16,14 @@ const AddressStyles = styled.address`
 export default function Address() {
   return (
     <AddressStyles>
-      <p className="m-ver-2">ul. Z. Modzelewskiego 63 lok. U5</p>
-      <p className="m-ver-2">02-679 Warszawa</p>
-      <div className="m-ver-2">
+      <p>ul. Modzelewskiego 63 lok. U5</p>
+      <p>02-679 Warszawa</p>
+      <p>
         <FontAwesomeIcon icon={faPhone} title="Numer telefonu do kancelarii" />
         <span>nr tel.: </span>
         <a href="tel:+48601484824">601 484 824</a>
-      </div>
-      <div className="m-ver-2">
+      </p>
+      <p>
         <FontAwesomeIcon
           icon={faEnvelope}
           title="Numer telefonu do kancelarii"
@@ -32,7 +32,7 @@ export default function Address() {
         <a href="mailto:wasilewski@notariusze.waw.pl">
           wasilewski@notariusze.waw.pl
         </a>
-      </div>
+      </p>
     </AddressStyles>
   );
 }

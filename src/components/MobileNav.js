@@ -41,7 +41,7 @@ const MobileNavTriggerStyle = styled.a`
   border: none;
   position: fixed;
   right: 0;
-  top: var(--whitespace-primary);
+  top: 2px;
   background: none;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
