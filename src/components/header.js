@@ -3,18 +3,21 @@ import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const HeaderStyles = styled.header`
+  background: linear-gradient(#dddfe1, #fff);
+
   @media screen and (min-width: 768px) {
+    background: none;
+    height: 400px;
     display: flex;
-    gap: 4rem;
-    align-items: end;
-    margin-bottom: 6rem;
+    align-items: center;
   }
 
-  div {
-    margin-top: 3rem;
+  & > div {
+    margin: 10rem 2em 5rem 2rem;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
-      margin-top: 0;
+      margin: 0;
       height: min-content;
     }
   }
@@ -32,22 +35,24 @@ const HeaderStyles = styled.header`
 `;
 
 const HeaderImageWrapperStyles = styled.figure`
-  position: relative;
-  margin: 0 auto;
-  max-width: 250px;
+  display: none;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+    height: 400px;
     margin: 0;
-    max-width: 350px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    overflow-y: clip;
+    z-index: 0;
   }
 `;
 
 export default function Header() {
   return (
     <HeaderStyles>
-      <HeaderImageWrapperStyles>
-        <StaticImage src="" alt="" placeholder="blurred" loading="eager" />
-      </HeaderImageWrapperStyles>
       <div>
         <h1>
           Marek
@@ -56,6 +61,14 @@ export default function Header() {
         </h1>
         <h2>notariusz</h2>
       </div>
+      <HeaderImageWrapperStyles>
+        <StaticImage
+          src="../images/header-image.jpg"
+          alt=""
+          placeholder="blurred"
+          loading="eager"
+        />
+      </HeaderImageWrapperStyles>
     </HeaderStyles>
   );
 }

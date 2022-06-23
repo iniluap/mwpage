@@ -25,6 +25,7 @@ const MainStyles = styled.main`
 
 const ArticleStyles = styled.article`
   grid-area: content;
+  padding: 4vw 2vw;
 `;
 
 export default function Layout({ children }) {

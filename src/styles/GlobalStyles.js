@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 4vw 2vw;
+    padding: 0;
   }
 
   article {
