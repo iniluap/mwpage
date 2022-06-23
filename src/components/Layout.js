@@ -24,8 +24,10 @@ const MainStyles = styled.main`
 `;
 
 const ArticleStyles = styled.article`
-  grid-area: content;
-  padding: 4vw 2vw;
+  width: 100%;
+  max-width: var(--main-container-width);
+  margin: 0 auto;
+  padding: 4vw var(--main-container-padding);
 `;
 
 export default function Layout({ children }) {

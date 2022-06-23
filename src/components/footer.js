@@ -3,8 +3,18 @@ import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
   grid-area: footer;
+  background-color: var(--primary-yellow);
   text-align: center;
-  color: var(--dark-grey);
+  color: var(--white);
+
+  a {
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--light-grey);
+    }
+  }
 `;
 
 export default function Footer() {
@@ -15,7 +25,10 @@ export default function Footer() {
           Treść tej wizytówki nie stanowi reklamy, w szczególności reklamy
           osobistej, ani oferty w rozumieniu obowiązujących przepisów prawa.
         </p>
-        <p>&copy; Paulina Sędłak-Jakubowska {new Date().getFullYear()}</p>
+        <p>
+          &copy; <a href="https://paulina.s-j.me">Paulina Sędłak-Jakubowska</a>{' '}
+          {new Date().getFullYear()}
+        </p>
         <p>
           Zdjęcie{' '}
           <a href="https://unsplash.com/@beatriz_perez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

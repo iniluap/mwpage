@@ -7,6 +7,8 @@ const NavStyles = styled.nav`
 
   @media screen and (min-width: 768px) {
     display: block;
+    max-width: var(--main-container-width);
+    margin: 0 auto;
   }
 
   ul {

@@ -12,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
     --secondary-rose: #c4625a;
     --whitespace-primary: 2rem;
     --whitespace-secondary: 3rem;
+    --main-container-width: 1000px;
+    --main-container-padding: 2vw;
     --layered-shadow: 0 1px 1px rgb(46 41 51 / 8%),
               0 2px 2px rgb(46 41 51 / 8%),
               0 4px 4px rgb(46 41 51 / 8%),
@@ -33,13 +35,17 @@ const GlobalStyles = createGlobalStyle`
   main {
     height: 100vh;
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0;
   }
 
   article {
     padding: var(--whitespace-secondary) 0;
+  }
+
+  .m-ver-2 {
+    margin-top: var(--whitespace-primary);
+    margin-bottom: var(--whitespace-primary);
   }
 
   .m-top-3 {

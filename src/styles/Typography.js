@@ -5,7 +5,7 @@ const Typography = createGlobalStyle`
     color: var(--black);
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
-    line-height: 1.7;
+    line-height: 2;
     letter-spacing: 0.1rem;
   }
 
@@ -45,6 +45,12 @@ const Typography = createGlobalStyle`
 
   ul {
     list-style: square;
+  }
+
+  ol {
+    li {
+      margin-bottom: 2rem;
+    }
   }
 
   .ul-plain {

@@ -12,14 +12,14 @@ const AddressStyles = styled.address`
 export default function Address() {
   return (
     <AddressStyles>
-      <p>ul. Z. Modzelewskiego 63 lok. U5</p>
-      <p>02-679 Warszawa</p>
-      <div>
+      <p className="m-ver-2">ul. Z. Modzelewskiego 63 lok. U5</p>
+      <p className="m-ver-2">02-679 Warszawa</p>
+      <div className="m-ver-2">
         <FontAwesomeIcon icon={faPhone} title="Numer telefonu do kancelarii" />
         <span>nr tel.: </span>
         <a href="tel:+48601484824">601 484 824</a>
       </div>
-      <div>
+      <div className="m-ver-2">
         <FontAwesomeIcon
           icon={faEnvelope}
           title="Numer telefonu do kancelarii"

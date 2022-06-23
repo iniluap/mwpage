@@ -17,8 +17,11 @@ const HeaderStyles = styled.header`
     z-index: 1;
 
     @media screen and (min-width: 768px) {
-      margin: 0;
+      margin: 0 auto;
+      padding: 0 var(--main-container-padding);
       height: min-content;
+      max-width: 1000px;
+      flex-grow: 1;
     }
   }
 
