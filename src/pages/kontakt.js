@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionHeader from '../components/SectionHeader';
 import Address from '../components/Address';
+import OpeningHours from '../components/OpeningHours';
 
 const ContactStyles = styled.div`
   .card-wrapper {
@@ -15,12 +16,12 @@ const ContactStyles = styled.div`
       }
     }
   }
-`;
 
-const OpeningsHeadlineStyles = styled.h4`
-  text-decoration: underline;
-  text-decoration-color: var(--primary-yellow);
-  font-weight: bolder;
+  h4 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-yellow);
+    font-weight: bolder;
+  }
 `;
 
 export default function KontaktPage() {
@@ -30,25 +31,10 @@ export default function KontaktPage() {
       <h3>Kancelaria Notarialna Marek Wasilewski</h3>
       <div className="card-wrapper">
         <div className="contact-page-address">
-          <OpeningsHeadlineStyles className="m-ver-2">
-            Dane kontaktowe
-          </OpeningsHeadlineStyles>
+          <h4 className="m-ver-2">Dane kontaktowe</h4>
           <Address />
         </div>
-        <div>
-          <OpeningsHeadlineStyles className="m-ver-2">
-            Godziny otwarcia
-          </OpeningsHeadlineStyles>
-          <p className="m-ver-2">
-            poniedziałek i wtorek: <strong>12:00 – 20:00</strong>
-          </p>
-          <p className="m-ver-2">
-            środa i czwartek: <strong>9:00 – 17:00</strong>
-          </p>
-          <p className="m-ver-2">
-            piątek: <strong>8:00 – 14:00</strong>
-          </p>
-        </div>
+        <OpeningHours />
         <div>
           <p>NIP: 6692481911</p>
           <p>REGON: 521139370</p>

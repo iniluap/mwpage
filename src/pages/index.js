@@ -42,11 +42,6 @@ export default function IndexPage() {
             W podziemnej hali garażowej budynku znajduje się dostępne dla
             Klientów miejsce postojowe o numerze 28.
           </p>
-          <p className="m-top-2">
-            Kancelaria otwarta jest w poniedziałki i wtorki w godzinach 12:00 –
-            20:00, w środy i czwartki w godzinach 9:00 – 17:00, w piątki w
-            godzinach 8:00 – 14:00.
-          </p>
           <p className="m-top-2">Konieczne jest uprzednie umówienie wizyty.</p>
           <p className="m-top-2">
             Istnieje możliwość dokonania czynności także w innych godzinach i
