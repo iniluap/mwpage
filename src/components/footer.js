@@ -5,16 +5,32 @@ import OpeningHours from '../components/OpeningHours';
 
 const FooterStyles = styled.footer`
   grid-area: footer;
-  padding: 2rem 6rem;
+  padding: var(--whitespace-primary) var(--main-container-padding);
   background-color: var(--primary-yellow);
   color: var(--white);
   font-size: 1.2rem;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--whitespace-primary);
     justify-content: center;
-    gap: 3rem;
+    grid-template-areas:
+      'address address opening opening'
+      'note note note note';
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: minmax(150px, 300px) minmax(150px, 300px) minmax(
+        150px,
+        300px
+      );
+    grid-template-areas: 'address opening note';
+  }
+
+  h4 {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-blue);
   }
 
   a {
@@ -32,22 +48,24 @@ const FooterStyles = styled.footer`
 `;
 
 const FooterColumnStyles = styled.div`
-  flex: 1 1 33%;
-  max-width: 450px;
-`;
+  &:first-of-type {
+    grid-area: address;
+  }
 
-const FooterHeadlineStyles = styled.h4`
-  text-decoration: underline;
-  text-decoration-color: var(--secondary-blue);
+  &:nth-child(2) {
+    grid-area: opening;
+  }
+
+  &:last-of-type {
+    grid-area: note;
+  }
 `;
 
 export default function Footer() {
   return (
     <FooterStyles>
       <FooterColumnStyles>
-        <FooterHeadlineStyles>
-          Kancelaria Notarialna Marek Wasilewski
-        </FooterHeadlineStyles>
+        <h4>Kancelaria Notarialna Marek Wasilewski</h4>
         <Address />
       </FooterColumnStyles>
       <FooterColumnStyles>
@@ -55,8 +73,9 @@ export default function Footer() {
       </FooterColumnStyles>
       <FooterColumnStyles>
         <p>
-          Treść tej wizytówki nie stanowi reklamy, w szczególności reklamy
-          osobistej, ani oferty w rozumieniu obowiązujących przepisów prawa.
+          Treść tej wizytówki nie stanowi reklamy, w&nbsp;szczególności reklamy
+          osobistej, ani oferty w&nbsp;rozumieniu obowiązujących przepisów
+          prawa.
         </p>
         <p>
           &copy; <a href="https://paulina.s-j.me">Paulina Sędłak-Jakubowska</a>{' '}

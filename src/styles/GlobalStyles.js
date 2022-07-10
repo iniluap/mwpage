@@ -14,11 +14,15 @@ const GlobalStyles = createGlobalStyle`
     --whitespace-secondary: 3rem;
     --header-height: 500px;
     --main-container-width: 1000px;
-    --main-container-padding: 2vw;
+    --main-container-padding: 5vw;
     --layered-shadow: 0 1px 1px rgb(46 41 51 / 8%),
               0 2px 2px rgb(46 41 51 / 8%),
               0 4px 4px rgb(46 41 51 / 8%),
               0 8px 8px rgb(46 41 51 / 8%);
+
+    @media screen and (min-width: 768px) {
+      --main-container-padding: 2vw;
+    }
   }
 
   * {
