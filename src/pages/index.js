@@ -7,7 +7,7 @@ const ContactBoxStyles = styled.section`
   @media screen and (min-width: 768px) {
     display: grid;
     align-items: center;
-    grid-template-columns: minmax(320px, 2fr) 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2.5rem;
   }
 `;
@@ -16,6 +16,7 @@ const AddressBoxStyles = styled.div`
   padding: 1.5rem;
   background-color: var(--primary-green);
   color: var(--white);
+  box-shadow: var(--layered-shadow);
 
   a {
     color: var(--white);
@@ -24,6 +25,13 @@ const AddressBoxStyles = styled.div`
       color: var(--light-grey);
     }
   }
+`;
+
+const BioStyles = styled.p`
+  padding: var(--whitespace-primary);
+  border-top: 1px solid rgb(46 41 51 / 3%);
+  border-left: 5px solid var(--secondary-blue);
+  box-shadow: var(--layered-shadow);
 `;
 
 export default function IndexPage() {
@@ -56,7 +64,7 @@ export default function IndexPage() {
         mieszkaniowej itp.) lub szczególne okoliczności (np. stan zdrowia strony
         czynności notarialnej).
       </p>
-      <p className="m-top-2">
+      <BioStyles className="m-top-2">
         Notariusz Marek Wasilewski w 2014 roku ukończył studia prawnicze na
         Wydziale Prawa i Administracji Uniwersytetu Warszawskiego. W latach 2015
         – 2018 odbył aplikację notarialną przy Izbie Notarialnej w Warszawie,
@@ -64,7 +72,7 @@ export default function IndexPage() {
         2018 roku zdał egzamin zawodowy, po czym do lutego 2022 roku pracował
         jako zastępca notarialny. Od maja 2022 roku prowadzi kancelarię
         notarialną jako notariusz w Izbie Notarialnej w Warszawie.
-      </p>
+      </BioStyles>
     </>
   );
 }
