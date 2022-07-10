@@ -16,7 +16,6 @@ const MainStyles = styled.main`
   grid-template-rows: auto min-content 1fr min-content;
   grid-template-areas:
     'header'
-    'nav'
     'content'
     'footer';
   gap: var(--whitespace-primary);
