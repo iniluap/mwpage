@@ -13,7 +13,7 @@ const MobileNavStyles = styled.nav`
   max-width: 400px;
   height: 100%;
   z-index: 10;
-  padding: 4rem;
+  padding: var(--whitespace-ternary);
   box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%);
   transition: all 0.3s ease-in-out;
 
@@ -53,7 +53,7 @@ const MobileNavTriggerStyle = styled.a`
 
   &.open-trigger {
     padding-left: 2.5rem;
-    background-color: var(--primary-yellow);
+    background-color: var(--accent-color);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     box-shadow: 0px 2px 12px 0px rgb(46 41 51 / 8%),

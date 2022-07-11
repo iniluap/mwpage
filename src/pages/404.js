@@ -16,13 +16,6 @@ const headingStyles = {
 const paragraphStyles = {
   marginBottom: 48,
 };
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4,
-};
 
 // markup
 const NotFoundPage = () => {
@@ -32,14 +25,6 @@ const NotFoundPage = () => {
       <h1 style={headingStyles}>Nie znaleziono strony</h1>
       <p style={paragraphStyles}>
         Przepraszamy, nie mogliśmy znaleźć strony, której szukasz.
-        <br />
-        {process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
         <br />
         <Link to="/">Strona główna</Link>.
       </p>

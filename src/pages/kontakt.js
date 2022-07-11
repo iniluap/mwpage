@@ -15,7 +15,7 @@ const ContactStyles = styled.div`
     margin-top: var(--whitespace-primary);
     margin-bottom: var(--whitespace-primary);
     text-decoration: underline;
-    text-decoration-color: var(--primary-yellow);
+    text-decoration-color: var(--accent-color);
     font-weight: bolder;
   }
 `;

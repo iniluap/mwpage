@@ -8,7 +8,7 @@ const AddressStyles = styled.address`
     margin-right: 0.5rem;
 
     .contact-page-address & {
-      color: var(--secondary-blue);
+      color: var(--secondary-color);
     }
   }
 `;

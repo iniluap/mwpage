@@ -5,15 +5,19 @@ import OpeningHours from '../components/OpeningHours';
 
 const FooterStyles = styled.footer`
   grid-area: footer;
+  display: grid;
+  grid-template-areas:
+    'address'
+    'opening'
+    'note';
   padding: var(--whitespace-primary) var(--main-container-padding);
-  background-color: var(--primary-yellow);
+  background-color: var(--accent-color);
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 
   @media screen and (min-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--whitespace-primary);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     grid-template-areas:
       'address address opening opening'
@@ -29,8 +33,11 @@ const FooterStyles = styled.footer`
   }
 
   h4 {
+    margin-bottom: var(--whitespace-primary);
+    font-size: 1.4rem;
+    font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: var(--secondary-blue);
+    text-decoration-color: var(--primary-color);
   }
 
   a {
@@ -38,7 +45,7 @@ const FooterStyles = styled.footer`
     text-decoration: none;
 
     &:hover {
-      color: var(--light-grey);
+      color: var(--light-accent-color);
     }
   }
 
@@ -61,27 +68,36 @@ const FooterColumnStyles = styled.div`
   }
 `;
 
+const NoteStyles = styled.p`
+  margin: 0 0 var(--whitespace-primary);
+  font-size: 1.2rem;
+`;
+
 export default function Footer() {
   return (
     <FooterStyles>
       <FooterColumnStyles>
-        <h4>Kancelaria Notarialna Marek Wasilewski</h4>
+        <h4>
+          Kancelaria Notarialna
+          <br />
+          Marek Wasilewski
+        </h4>
         <Address />
       </FooterColumnStyles>
-      <FooterColumnStyles>
+      <FooterColumnStyles className="m-ver-2">
         <OpeningHours />
       </FooterColumnStyles>
-      <FooterColumnStyles>
-        <p>
+      <FooterColumnStyles className="m-ver-2">
+        <NoteStyles>
           Treść tej wizytówki nie stanowi reklamy, w&nbsp;szczególności reklamy
           osobistej, ani oferty w&nbsp;rozumieniu obowiązujących przepisów
           prawa.
-        </p>
-        <p>
+        </NoteStyles>
+        <NoteStyles>
           &copy; <a href="https://paulina.s-j.me">Paulina Sędłak-Jakubowska</a>{' '}
           {new Date().getFullYear()}
-        </p>
-        <p>
+        </NoteStyles>
+        <NoteStyles>
           Zdjęcie{' '}
           <a href="https://unsplash.com/@beatriz_perez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
             Beatriz Pérez Moya
@@ -90,7 +106,7 @@ export default function Footer() {
           <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
             Unsplash
           </a>
-        </p>
+        </NoteStyles>
       </FooterColumnStyles>
     </FooterStyles>
   );

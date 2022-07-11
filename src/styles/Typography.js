@@ -17,8 +17,8 @@ const Typography = createGlobalStyle`
   }
 
   a {
-    color: var(--dark-grey);
-    text-decoration-color: var(--primary-green);
+    color: var(--grey);
+    text-decoration-color: var(--primary-color);
     text-decoration-thickness: 0.2rem;
 
     &:hover {
@@ -34,7 +34,7 @@ const Typography = createGlobalStyle`
 
     &:hover {
       transform: scale(1.1);
-      text-decoration: underline var(--primary-green);
+      text-decoration: underline var(--primary-color);
       text-decoration-thickness: 0.2rem;
     }
   }

@@ -33,7 +33,7 @@ const HeaderStyles = styled.header`
   }
 
   h2 {
-    color: var(--primary-yellow);
+    color: var(--accent-color);
   }
 `;
 

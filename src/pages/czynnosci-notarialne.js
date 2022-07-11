@@ -6,20 +6,38 @@ export default function CzynnosciPage() {
     <>
       <SectionHeader sectionTitle="Czynności notarialne" />
       <p className="m-top-3">
-        Notariusz dokonuje w szczególności czynności notarialnych związanych z
-        obrotem nieruchomościami, dziedziczeniem, prawem spółek handlowych,
-        prawem rodzinnym, prawem spółdzielczym. Ponadto dokonuje wszelkich
-        czynności, które nie mieszczą się w powyższym zakresie, a którym strony
-        pragną nadać formę notarialną.
+        Notariusz dokonuje w szczególności czynności notarialnych związanych z:
+        <ul>
+          <li>obrotem nieruchomościami,</li>
+          <li>dziedziczeniem,</li>
+          <li>prawem spółek handlowych,</li>
+          <li>prawem rodzinnym,</li>
+          <li>prawem spółdzielczym.</li>
+        </ul>
+        Ponadto dokonuje wszelkich czynności, które nie mieszczą się w powyższym
+        zakresie, a którym strony pragną nadać formę notarialną.
       </p>
       <p className="m-top-3">
         Do najczęstszych czynności, którym nadawana jest forma notarialna, można
-        zaliczyć umowy sprzedaży, darowizny, dożywocia, zniesienia
-        współwłasności, podziału majątku wspólnego, przedwstępne, spółek,
-        oświadczenia o poddaniu się egzekucji, protokoły z obrad zgromadzeń
-        wspólników, ugody, pełnomocnictwa, testamenty, oświadczenia o przyjęciu
-        lub odrzuceniu spadku, protokoły dziedziczenia, akty poświadczenia
-        dziedziczenia, działy spadku.{' '}
+        zaliczyć:
+        <ul>
+          <li>umowy sprzedaży,</li>
+          <li>darowizny,</li>
+          <li>dożywocia,</li>
+          <li>zniesienia współwłasności,</li>
+          <li>podziału majątku wspólnego,</li>
+          <li>przedwstępne,</li>
+          <li>spółek,</li>
+          <li>oświadczenia o poddaniu się egzekucji,</li>
+          <li>protokoły z obrad zgromadzeń wspólników,</li>
+          <li>ugody,</li>
+          <li>pełnomocnictwa,</li>
+          <li>testamenty,</li>
+          <li>oświadczenia o przyjęciu lub odrzuceniu spadku,</li>
+          <li>protokoły dziedziczenia,</li>
+          <li>akty poświadczenia dziedziczenia,</li>
+          <li>działy spadku.</li>
+        </ul>
       </p>
       <p className="m-top-3">
         Rodzaje czynności notarialnych określa art. 79 ustawy z dnia 14 lutego

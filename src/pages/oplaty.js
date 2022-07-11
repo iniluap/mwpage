@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SectionHeader from '../components/SectionHeader';
 
 const SubheadlineStyles = styled.h3`
-  color: var(--primary-green);
+  color: var(--primary-color);
   font-weight: bolder;
 `;
 

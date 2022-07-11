@@ -22,7 +22,7 @@ const NavStyles = styled.nav`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: var(--whitespace-secondary);
+    gap: 4rem;
   }
 `;
 

@@ -4,17 +4,20 @@ import Address from '../components/Address';
 import SectionHeader from '../components/SectionHeader';
 
 const ContactBoxStyles = styled.section`
+  display: grid;
+  gap: var(--whitespace-ternary);
+
   @media screen and (min-width: 768px) {
-    display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: minmax(320px, 2fr) 3fr;
   }
 `;
 
 const AddressBoxStyles = styled.div`
   padding: 1.5rem;
-  background-color: var(--primary-green);
+  background-color: var(--primary-color);
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: var(--border-radius);
   color: var(--white);
   box-shadow: var(--layered-shadow);
 
@@ -22,15 +25,17 @@ const AddressBoxStyles = styled.div`
     color: var(--white);
 
     &:hover {
-      color: var(--light-grey);
+      color: var(--light-accent-color);
     }
   }
 `;
 
 const BioStyles = styled.p`
+  margin-top: var(--whitespace-ternary);
   padding: var(--whitespace-primary);
   border-top: 1px solid rgb(46 41 51 / 3%);
-  border-left: 5px solid var(--secondary-blue);
+  border-left: 5px solid var(--secondary-color);
+  border-radius: var(--border-radius);
   box-shadow: var(--layered-shadow);
 `;
 
@@ -64,7 +69,7 @@ export default function IndexPage() {
         mieszkaniowej itp.) lub szczególne okoliczności (np. stan zdrowia strony
         czynności notarialnej).
       </p>
-      <BioStyles className="m-top-2">
+      <BioStyles>
         Notariusz Marek Wasilewski w 2014 roku ukończył studia prawnicze na
         Wydziale Prawa i Administracji Uniwersytetu Warszawskiego. W latach 2015
         – 2018 odbył aplikację notarialną przy Izbie Notarialnej w Warszawie,

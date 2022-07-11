@@ -8,7 +8,7 @@ const ContactBarStyles = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  background: var(--primary-green);
+  background: var(--primary-color);
   color: var(--white);
   text-align: center;
   z-index: 5;
@@ -21,7 +21,7 @@ const ContactBarStyles = styled.div`
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      gap: 3rem;
+      gap: var(--whitespace-ternary);
     }
   }
 
@@ -29,7 +29,7 @@ const ContactBarStyles = styled.div`
     color: var(--white);
 
     &:hover {
-      color: var(--light-grey);
+      color: var(--light-accent-color);
     }
 
     svg {
