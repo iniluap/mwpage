@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/',
   siteMetadata: {
     title: `Marek Wasilewski - notariusz`,
     siteUrl: `http://marek-notariusz.pl`,
@@ -14,6 +15,17 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/icon.svg',
+      },
+    },
+    'gatsby-plugin-cname',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        short_name: 'Marek Wasilewski - notariusz',
+        name: 'Marek Wasilewski',
+        icon: 'src/images/icon.svg',
+        background_color: `#2D4263`,
+        theme_color: `#2D4263`,
       },
     },
     'gatsby-plugin-sharp',
