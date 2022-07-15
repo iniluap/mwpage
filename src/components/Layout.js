@@ -52,7 +52,7 @@ export default function Layout({ children }) {
         <meta name="copyright" content="Marek Wasilewski" />
         <meta name="author" content="Paulina Sędłak-Jakubowska" />
         <meta name="robots" content="follow" />
-        <link rel="canonical" href="http://marek-notariusz.pl" />
+        <link rel="canonical" href="https://marek-notariusz.pl" />
       </Helmet>
       <GlobalStyles />
       <Typography />

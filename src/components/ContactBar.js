@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 const ContactBarStyles = styled.div`
   position: fixed;
@@ -46,6 +49,7 @@ export default function ContactBar() {
           <FontAwesomeIcon
             icon={faPhone}
             title="Numer telefonu do kancelarii"
+            height="14px"
           />
           601 484 824
         </a>
@@ -53,6 +57,7 @@ export default function ContactBar() {
           <FontAwesomeIcon
             icon={faEnvelope}
             title="Numer telefonu do kancelarii"
+            height="14px"
           />
           wasilewski@notariusze.waw.pl
         </a>

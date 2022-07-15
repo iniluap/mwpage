@@ -2,10 +2,11 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Marek Wasilewski - notariusz`,
-    siteUrl: `http://marek-notariusz.pl`,
+    siteUrl: `https://marek-notariusz.pl`,
     description: `Kancelaria notarialna w Warszawie, ul. Modzelewskiego 63.
       Blisko stacji Metro Wierzbno i z dostępnym miejscem postojowym.
       Łatwy dostęp dla osób poruszających się na wózku inwalidzkim.`,
+    author: 'Paulina Sędłak-Jakubowska',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -21,11 +22,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        start_url: `/`,
         short_name: 'Marek Wasilewski - notariusz',
         name: 'Marek Wasilewski',
         icon: 'src/images/icon.svg',
         background_color: `#2D4263`,
         theme_color: `#2D4263`,
+        display: `standalone`,
       },
     },
     'gatsby-plugin-sharp',
