@@ -3,7 +3,13 @@ import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const HeaderStyles = styled.header`
-  background: linear-gradient(#dddfe1, #fff);
+  background: linear-gradient(
+      180deg,
+      rgba(45, 66, 99, 0.65) 0%,
+      rgba(221, 223, 225, 0.76) 30%,
+      rgba(236, 219, 186, 0.15) 60%
+    ),
+    rgba(256, 256, 256, 1) 80%;
 
   @media screen and (min-width: 768px) {
     background: none;
@@ -13,7 +19,7 @@ const HeaderStyles = styled.header`
   }
 
   & > div {
-    margin: 10rem 2em 5rem 2rem;
+    margin: 12rem 2em 4rem 2rem;
     z-index: 1;
 
     @media screen and (min-width: 768px) {

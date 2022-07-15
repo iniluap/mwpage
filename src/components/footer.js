@@ -11,7 +11,7 @@ const FooterStyles = styled.footer`
     'opening'
     'note';
   padding: var(--whitespace-primary) var(--main-container-padding);
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   color: var(--white);
   font-size: 1.3rem;
 
@@ -36,8 +36,6 @@ const FooterStyles = styled.footer`
     margin-bottom: var(--whitespace-primary);
     font-size: 1.4rem;
     font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
   }
 
   a {

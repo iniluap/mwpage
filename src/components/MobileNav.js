@@ -37,22 +37,23 @@ const MobileNavStyles = styled.nav`
 const MobileNavTriggerStyle = styled.a`
   width: auto;
   height: auto;
-  padding: var(--whitespace-primary);
+  padding: 2rem 1.5rem 1.7rem 2.5rem;
   border: none;
   position: fixed;
   right: 0;
-  top: 2px;
+  top: 0;
   background: none;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &.close-trigger {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
     display: none;
     z-index: 20;
   }
 
   &.open-trigger {
-    padding-left: 2.5rem;
     background-color: var(--accent-color);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -65,10 +66,18 @@ const MobileNavTriggerStyle = styled.a`
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  svg {
+    height: 2em;
+  }
 `;
 
 const MobileNavLiStyled = styled.li`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  a {
+    font-size: 2rem;
+  }
 `;
 
 export default function MobileNav() {

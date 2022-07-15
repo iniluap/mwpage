@@ -39,7 +39,19 @@ export default function Layout({ children }) {
       >
         <meta charSet="utf-8" />
         <title>Marek Wasilewski - notariusz</title>
-        <meta name="description" content="Marek Wasilewski - notariusz" />
+        <meta
+          name="description"
+          content="Kancelaria notarialna w Warszawie, ul. Modzelewskiego 63.
+            Blisko stacji Metro Wierzbno i z dostępnym miejscem postojowym.
+            Łatwy dostęp dla osób poruszających się na wózku inwalidzkim."
+        />
+        <meta
+          name="keywords"
+          content="notariusz, kancelaria notarialna, Warszawa, Mokotów, Wierzbno, akt notarialny, umowa, testament, spadek, dziedziczenie, pełnomocnictwo"
+        />
+        <meta name="copyright" content="Marek Wasilewski" />
+        <meta name="author" content="Paulina Sędłak-Jakubowska" />
+        <meta name="robots" content="follow" />
         <link rel="canonical" href="http://marek-notariusz.pl" />
       </Helmet>
       <GlobalStyles />
