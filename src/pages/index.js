@@ -58,7 +58,7 @@ export default function IndexPage() {
           <p className="m-top-2">Konieczne jest uprzednie umówienie wizyty.</p>
           <p className="m-top-2">
             Istnieje możliwość dokonania czynności także w innych godzinach i
-            innych dniach, niż wskazane powyżej.
+            innych dniach, niż wskazane poniżej.
           </p>
         </div>
       </ContactBoxStyles>
