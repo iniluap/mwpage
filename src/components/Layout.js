@@ -52,6 +52,8 @@ export default function Layout({ children }) {
         <meta name="copyright" content="Marek Wasilewski" />
         <meta name="author" content="Paulina Sędłak-Jakubowska" />
         <meta name="robots" content="follow" />
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:locale" content="pl" />
         <link rel="canonical" href="https://marek-notariusz.pl" />
       </Helmet>
       <GlobalStyles />

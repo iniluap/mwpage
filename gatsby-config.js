@@ -1,8 +1,10 @@
+const siteUrl = `https://marek-notariusz.pl`;
+
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Marek Wasilewski - notariusz`,
-    siteUrl: `https://marek-notariusz.pl`,
+    siteUrl: siteUrl,
     description: `Kancelaria notarialna w Warszawie, ul. Modzelewskiego 63.
       Blisko stacji Metro Wierzbno i z dostępnym miejscem postojowym.
       Łatwy dostęp dla osób poruszających się na wózku inwalidzkim.`,
@@ -40,6 +42,20 @@ module.exports = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        createLinkInHead: true,
+        resolveSiteUrl: () => siteUrl,
+        serialize: ({ path }) => {
+          return {
+            url: path,
+            changefreq: 'daily',
+            priority: 0.7,
+          };
+        },
+      },
     },
   ],
 };
