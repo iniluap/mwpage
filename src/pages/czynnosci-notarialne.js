@@ -5,7 +5,7 @@ export default function CzynnosciPage() {
   return (
     <>
       <SectionHeader sectionTitle="Czynności notarialne" />
-      <p className="m-top-3">
+      <div className="m-top-3">
         Notariusz dokonuje w szczególności czynności notarialnych związanych z:
         <ul>
           <li>obrotem nieruchomościami,</li>
@@ -14,10 +14,12 @@ export default function CzynnosciPage() {
           <li>prawem rodzinnym,</li>
           <li>prawem spółdzielczym.</li>
         </ul>
-        Ponadto dokonuje wszelkich czynności, które nie mieszczą się w powyższym
-        zakresie, a którym strony pragną nadać formę notarialną.
-      </p>
-      <p className="m-top-3">
+        <p>
+          Ponadto dokonuje wszelkich czynności, które nie mieszczą się w
+          powyższym zakresie, a którym strony pragną nadać formę notarialną.
+        </p>
+      </div>
+      <div className="m-top-3">
         Do najczęstszych czynności, którym nadawana jest forma notarialna, można
         zaliczyć:
         <ul>
@@ -38,7 +40,7 @@ export default function CzynnosciPage() {
           <li>akty poświadczenia dziedziczenia,</li>
           <li>działy spadku.</li>
         </ul>
-      </p>
+      </div>
       <p className="m-top-3">
         Rodzaje czynności notarialnych określa art. 79 ustawy z dnia 14 lutego
         1991 roku Prawo o notariacie.
