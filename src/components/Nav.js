@@ -51,6 +51,15 @@ export default function Nav() {
         </li>
         <li>
           <Link
+            to="/artykuly"
+            className="nav-link"
+            aria-label="Do strony Artykuły"
+          >
+            Artykuły
+          </Link>
+        </li>
+        <li>
+          <Link
             to="/kontakt"
             className="nav-link"
             aria-label="Do strony Kontakt"

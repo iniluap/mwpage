@@ -110,6 +110,15 @@ export default function MobileNav() {
           </MobileNavLiStyled>
           <MobileNavLiStyled>
             <Link
+              to="/artykuly"
+              className="nav-link"
+              aria-label="Do strony Artykuły"
+            >
+              Artykuły
+            </Link>
+          </MobileNavLiStyled>
+          <MobileNavLiStyled>
+            <Link
               to="/kontakt"
               className="nav-link"
               aria-label="Do strony Kontakt"

@@ -14,6 +14,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -31,6 +32,13 @@ module.exports = {
         background_color: `#2D4263`,
         theme_color: `#2D4263`,
         display: `standalone`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     'gatsby-plugin-sharp',
